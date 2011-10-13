@@ -8,7 +8,7 @@ A Kohana 3.2 module to make it easy to use beanstalkd, it uses Pheanstalk, a com
 	./beanstalkd
 	
 ## Some Code
-
+	```php
 	// Add something to a queue
 	$queue = Kostalk::instance('name_of_tube');
 	$queue->push(array(
@@ -23,3 +23,4 @@ A Kohana 3.2 module to make it easy to use beanstalkd, it uses Pheanstalk, a com
 	$queue = Kostalk::instance('name_of_tube')->pull(function($data, $job){
 		print_r($data); // array('this' => 'is', 'some' => 'data');
 	});
+	```
