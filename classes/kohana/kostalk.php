@@ -8,7 +8,7 @@ class Kohana_Kostalk {
 	protected $host;
 	protected $port = 11300;
 	protected $tube;
-	protected $pheanstalk;
+	public $pheanstalk;
 	
 	public static function instance($tube = NULL)
 	{
